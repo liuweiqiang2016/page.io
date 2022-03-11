@@ -45,6 +45,9 @@
 		});
 		sensors.quick('autoTrack');
 	</script>
+	
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
@@ -80,6 +83,8 @@
 	<br>
 	<button type="button" id="open_app" onclick="javascrtpt:window.location.href='testdemo://ss.com/?utm_content=aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa&utm_campaign=只有在砸啊谷歌利用好每一分钟智能手表可让您随时了解自己的健康状况与自己关心的人保持联系查看您所关注的信息&utm_medium=1111111222222222222223333333333333333333333444444444444444444444444777777777777&utm_source=我是aaah好的11111111&utm_term=asasasasasasa啊撒撒撒撒撒&ttt=2134'">openApp</button>
 	<br>
+	
+	<div id="content"></div>
 
 </body>	
 
@@ -95,6 +100,12 @@
           });
         }
 });
+</script>
+	
+<script>
+    $.get('../README.md', function(response, status, xhr){
+        $("#content").html(marked(response));
+    });
 </script>
 
 </html>
