@@ -1,77 +1,16 @@
-# page.io
-测试页面
-![logo](https://opensource.sensorsdata.cn/wp-content/uploads/logo.png)
-<br><br>
-[![License](https://img.shields.io/github/license/sensorsdata/sa-sdk-android.svg)](https://github.com/sensorsdata/sa-sdk-android/blob/master/LICENSE)
-[![GitHub release](https://img.shields.io/github/tag/sensorsdata/sa-sdk-android.svg?label=release)](https://github.com/sensorsdata/sa-sdk-android/releases)
-[![GitHub release date](https://img.shields.io/github/release-date/sensorsdata/sa-sdk-android.svg)](https://github.com/sensorsdata/sa-sdk-android/releases)
-
-## 神策简介
-
-[**神策数据**](https://www.sensorsdata.cn/)
-（Sensors Data），隶属于神策网络科技（北京）有限公司，是一家专业的大数据分析服务公司，大数据分析行业开拓者，为客户提供深度用户行为分析平台、以及专业的咨询服务和行业解决方案，致力于帮助客户实现数据驱动。神策数据立足大数据及用户行为分析的技术与实践前沿，业务现已覆盖以互联网、金融、零售快消、高科技、制造等为代表的十多个主要行业、并可支持企业多个职能部门。公司总部在北京，并在上海、深圳、合肥、武汉等地拥有本地化的服务团队，覆盖东区及南区市场；公司拥有专业的服务团队，为客户提供一对一的客户服务。公司在大数据领域积累的核心关键技术，包括在海量数据采集、存储、清洗、分析挖掘、可视化、智能应用、安全与隐私保护等领域。 [**More**](https://www.sensorsdata.cn/about/aboutus.html)
-
-
-## SDK 简介
-
-SensorsAnalytics SDK 是国内第一家开源商用版用户行为采集 SDK，目前支持代码埋点、全埋点、App 点击图、可视化全埋点等。目前已累计有 1500 多家付费客户，2500+ 的 App 集成使用，作为 App 数据采集利器，致力于帮助客户挖掘更多的商业价值，为其精准运营和业务支撑提供了可靠的数据来源。其采集全面而灵活、性能良好，并一直保持稳定的迭代，经受住了时间和客户的考验。
-
-## 基本要求
-Android 4.0 及以上。
-
-## 集成文档
-
-请参考神策官网 [Android SDK 集成文档](http://www.sensorsdata.cn/manual/android_sdk.html)。
-
-
-## 贡献
-
-* 1.  在您的 GitHub 账户下 fork sa-sdk-android 开源项目；
-* 2.  根据您的需求在本地 clone 一份 sa-sdk-android 源码；
-* 3.  您修改或者新增功能后，push 到您 fork 的远程分支；
-* 4.  创建 pull request，向 sa-sdk-android 官方开发分支提交合入请求；
-* 5.  神策 SDK 研发团队会及时 review 代码，测试通过后合入。
-
-## 规划
-
-可参考 [ROADMAP](ROADMAP.md).
-
-## 讨论
-
-| 扫码加入神策数据开源社区 QQ 群<br>群号：785122381 | 扫码加入神策数据开源社区微信群 |
-| ------ | ------ |
-|![ QQ 讨论群](https://opensource.sensorsdata.cn/wp-content/uploads/ContentCommonPic_1.png) | ![ 微信讨论群 ](https://opensource.sensorsdata.cn/wp-content/uploads/ContentCommonPic_2.png) |
-
-## 公众号
-
-| 扫码关注<br>神策数据开源社区 | 扫码关注<br>神策数据开源社区服务号 |
-| ------ | ------ |
-|![ 微信订阅号 ](https://opensource.sensorsdata.cn/wp-content/uploads/ContentCommonPic_3.png) | ![ 微信服务号 ](https://opensource.sensorsdata.cn/wp-content/uploads/ContentCommonPic_4.png) |
-
-
-## 新书推荐
-
-| 《数据驱动：从方法到实践》 | 《Android 全埋点解决方案》 | 《iOS 全埋点解决方案》
-| ------ | ------ | ------ |
-| [![《数据驱动：从方法到实践》](https://opensource.sensorsdata.cn/wp-content/uploads/data_driven_book_1.jpg)](https://item.jd.com/12322322.html) | [![《Android 全埋点解决方案》](https://opensource.sensorsdata.cn/wp-content/uploads/Android-全埋点thumbnail_1.png)](https://item.jd.com/12574672.html) | [![《iOS 全埋点解决方案》](https://opensource.sensorsdata.cn/wp-content/uploads/iOS-全埋点thumbnail_1.png)](https://item.jd.com/12867068.html)
-
-## 感谢
-- [mixpanel-android](https://github.com/mixpanel/mixpanel-android) 
-- [TiDB](https://github.com/pingcap/tidb) 
-- [Knight-ZXW](https://github.com/Knight-ZXW)
-
-## License
-
-Copyright 2015－2022 Sensors Data Inc.
-
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-
-http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
+# 用户手册
+### 整体功能
+本应用为方便用户快速调试神策 SDK 而开发，具备以下功能：原生 SDK 相关事件调试、H5 打通调试、可视化全埋点/App 点击分析调试、应用设置等功能
+### 原生 SDK 相关事件
+进入原生 SDK 相关事件页面后，可对原生 SDK 初始化信息进行设置，包括扫码录入数据接收地址、是否开启全埋点（包括应用启动、页面浏览、页面点击、应用退出及 Fragment 页面浏览）、是否开启加密（密钥类型由服务端控制）。参数设置完毕后，即可进入原生 SDK 调试页面。支持调试原生 SDK 核心采集接口，包括：事件操作、用户属性操作、item 操作、用户标识、IDM3 及常用控件点击（参数设置中开启全埋点）等。调用 SDK 相关接口后，数据会正常上报到参数中设置的数据接收地址，滑动到日志页面，即可查看相关操作日志。
+### H5 打通调试
+进入到 H5 打通调试页面后，可对打通参数进行相关设置，包括：是否打通、是否使用旧版本打通、是否支持 Android 4.1 及以下版本、是否开启数据接收地址校验（仅旧版打通生效）、扫码录入数据接收地址 H5 页面地址、选择加载 H5 页面的浏览器内核（原生或腾讯 X5）。参数设置完毕后，即可进入 H5 打通 调试页面。对 H5 页面执行相关操作，，滑动到日志页面，即可查看相关操作日志（H5 页面中的 consolelog 需要打开）
+### 可视化全埋点/App 点击分析
+进入可视化全埋点/App 点击分析页面后，可对相关参数进行设置，包括：扫码录入数据接收地址、是否开启可视化全埋点自定义属性、页面类型（H5 页面或原生页面）、是否开启打通、H5 页面地址（跳转到原生页面无需录入）。跳转后，弹出可视化全埋点/App 点击分析配对码（需要数据接收地址对应的 SA 环境支持配对码），输入正确的配对码后即可进入可视化全埋点/App 点击分析页面
+### 应用设置
+点击应用右上角设置图标，即可进入应用设置页面。应用设置包括：是否保存 SDK 历史信息、是否保存参数配置信息、用户手册、关于、开源框架。
+- 默认情况下，保存 SDK 历史信息，即：上次 SDK 产生的历史数据，下次 SDK 调试后会继续使用，例如上次 SDK 调试进行登录操作产生的登录 ID、设置静态公共属性产生的公共属性等。如果选择不保存，下次启动应用后，会主动清除 SDK 产生的历史数据
+- 参数配置信息同理，默认保存，参数配置信息指的是扫码例如的数据接收地址、H5 页面地址、各开关状态等。选择不保存后，下次启动应用会清除以上信息，进入相关页面后，历史产生的配置信息均需要重新录入
+- 用户手册介绍应用的相关功能，即本页面：）
+- 关于页面介绍应用基本信息，包括应用版本、SDK 版本、开发者、应用简介
+- 开源框架：本应用使用多款开源框架，为感谢以上开源作者，特别展示以上开源框架，欢迎大家多多支持开源事业
