@@ -44,6 +44,21 @@
                 }
 		});
 		sensors.quick('autoTrack');
+		
+		
+		var unloadHandler = function (e) {
+	// 定义一个记录页面停留时间的事件 pageclose,并且保存需要的属性(停留时间和当前页面的地址)
+		sensors.track('marginZone_courseDetailPageView', { 
+			course_type:"图文详情",
+	   		content_title:articleTitle,
+	   		content_writer:"证券金融部"
+		});
+	};
+
+	
+	window.onbeforeunload = function(e){
+		unloadHandler();
+	}	
 	</script>
 </head>
 
@@ -96,6 +111,9 @@
           });
         }
 });
+	
+	
+	
 </script>
 
 </html>
